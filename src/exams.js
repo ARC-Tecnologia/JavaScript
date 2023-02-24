@@ -1,4 +1,5 @@
 import months from './months.js'
+import carros from './carros.js'
 
 // Filtra meses
 const filteredMonths = months.filter( (months)=> {
@@ -19,6 +20,12 @@ filteredMonths.forEach(month => {
 // }
 
 let meses = [30,30,30] // array comum
+
+// Este código irá imprimir o modelo de cada carro na lista.
+for (let i = 0; i < carros.length; i++) {
+    console.log(carros[i].modelo);
+  }
+  
 
 // Reduce - função com todos os itens do array e devolve um valor único
 let sumMonthDays = filteredMonths.reduce( (prev, next) => {
