@@ -1,17 +1,15 @@
-//function calcularMedia( notas ) {
-/**Nessa transformação, a função foi definida como uma constante utilizando 
- * a sintaxe de arrow function, com o parâmetro notas entre parênteses antes da flecha =>. 
- * O corpo da função foi mantido praticamente igual, exceto pela declaração da variável media 
- * utilizando a palavra-chave const.*/
-const calcularMedia = (notas) => {
+function calcularMedia( notas ) {
+
     let soma = 0;
-    for (let c = 0; c < notas.length; c++) {
+    for( c = 0; c < notas.length; c++) {
         soma += notas[c];
     }
-    const media = soma / notas.length;
-    return media;
-}
 
+    media = soma / notas.length;
+
+    return media;
+
+}
 
 let media; // escopo global
 
